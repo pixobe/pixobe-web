@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html data-theme="hugotech"><head>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  
+  
+  
+  
+     
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta
+    name="author"
+    content=""
+  />
+  <meta name="description" content="How to choose between a shortcode and a partial?" />
+  <meta
+    name="keywords"
+    content=""
+  />
+  <meta name="robots" content="noodp" />
+  <meta name="theme-color" content="" />
+
+  
+  
+  
+   
+  
+  
+
+  <title>Shortcode vs Partials | Pixobe</title>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <meta property="og:url" content="https://pixobe.com/blog/hugo/shortcode-vs-partials/" />
+  <meta property="og:type" content="image" />
+  <meta property="og:title" content="Shortcode vs Partials | Pixobe" />
+  <meta property="og:description" content="How to choose between a shortcode and a partial?" />
+  
+  
+  <meta property="og:image" content="https://pixobe.com/images/media-card.png" />
+  
+  
+
+  
+  <meta property="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta property="twitter:url" content="https://pixobe.com/" />
+  <meta property="twitter:title" content="Shortcode vs Partials | Pixobe" />
+  <meta property="twitter:description" content="How to choose between a shortcode and a partial?" />
+
+  
+  
+  <meta property="twitter:image" content="https://pixobe.com/images/media-card.png" />
+  
+  
+
+  
+  <link rel="canonical" href="https://pixobe.com/blog/hugo/shortcode-vs-partials/" />
+
+  
+  
+  
+
+  
+   
+  
+  <link href="/css/main.min.css" rel="stylesheet" /> 
+
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body
+    class="text-neutral bg-gray-50 font-body flex flex-col min-h-screen justify-between"
+  >
+    <header><nav class="bg-primary text-white">
+  <div class="navbar w-full lg:w-[80%] mx-auto">
+    <div class="navbar-start">
+      
+      <a
+        class="flex text-[24px] uppercase gap-2 font-semibold justify-center leading-[24px]"
+        href="https://pixobe.com/"
+        alt="Logo"
+      >
+        
+        <img src="https://pixobe.com/images/logo.png" height="24px" class="h-6" />
+         Pixobe
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="flex flex-row gap-6 font-normal">
+        
+
+        
+        
+        
+        
+        
+        <li
+          class="tracking-wider  "
+          
+        >
+          <a href="/blog/">Blog</a>
+        </li>
+        
+        
+        
+        
+        <li
+          class="tracking-wider  "
+          
+        >
+          <a href="/wordpress/">WordPress</a>
+        </li>
+        
+        
+        
+        
+        <li
+          class="tracking-wider  "
+          
+        >
+          <a href="/contact/">Contact</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <div class="block lg:hidden dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7"
+            />
+          </svg>
+        </label>
+        <ul
+          tabindex="0"
+          class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-accent-content rounded-box w-52"
+        >
+          
+          
+          
+          
+          
+          <li
+            class="tracking-wider  "
+            
+          >
+            <a href="/blog/">Blog</a>
+          </li>
+          
+          
+          
+          
+          <li
+            class="tracking-wider  "
+            
+          >
+            <a href="/wordpress/">WordPress</a>
+          </li>
+          
+          
+          
+          
+          <li
+            class="tracking-wider  "
+            
+          >
+            <a href="/contact/">Contact</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+    <main id="content" class="flex-1">
+<div class="h-full single-default">
+  <div class="single-default-header">
+    <h1>Shortcode vs Partials</h1>
+    <h2>How to choose between a shortcode and a partial?</h2>
+  </div>
+  <div
+    class="prose prose-base max-w-none w-full md:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_auto] p-2"
+  >
+    <section>
+      <h2 id="shortcode-and-partials">Shortcode and Partials</h2>
+<p>Both are reusable html code that can be used in your hugo site.</p>
+<p><strong>Shortcode</strong> is for FrontMatter (or markdown files),
+where as <strong>Partials</strong> can be used in layouts, other partials and short codes.</p>
+<h2 id="shortcode">Shortcode</h2>
+<p>To include a Markdown shortcode in a page, use the name of the shortcode file, in between double curly braces and percent characters, {{% SHORTCODE %}}. To use myshortcode.md add the below snippet to Markdown page.</p>
+<h3 id="markdown-shortcodes">Markdown Shortcodes</h3>
+<pre tabindex="0"><code> {{% myshortcode %}}
+</code></pre><h3 id="html-shortcodes">HTML Shortcodes</h3>
+<pre tabindex="0"><code> {{&lt; myshortcode &gt;}}
+</code></pre><h3 id="partials">Partials</h3>
+<p>Partials are reusable html blocks (typically html files), that you can use from short code or another partial or layout file.</p>
+<p>Typical example include header.html , footer.html.</p>
+<pre tabindex="0"><code>{{partial &#34;my-custom-banner.html&#34; .}}
+</code></pre><h3 id="scenerio">Scenerio</h3>
+<p>Ok, tell me where I am supposed to use a short code? Well, think about this - mark down file contains markdown syntax and you would want to render some awesome card. How would you create it?</p>
+<ul>
+<li>You want to render some html markup in front matter (.md files)</li>
+<li>You want to reuse some custom html block in more than one place, for eg <strong>Subscribe to our mailing thread</strong> kind of input box.</li>
+</ul>
+<form
+  name="subscribers"
+  method="POST"
+  action="/thankyou"
+  method="POST"
+  data-netlify="true"
+  class="flex justify-center"
+>
+  <div class="flex flex-row w-full lg:w-[450px]">
+    <input
+      type="text"
+      placeholder="Subscribe for updates"
+      name="subscriber"
+      class="p-2 box-border rounded-l-full h-[42px] w-full hover:outline-none focus:outline-none hover:border-accent border border-primary border-r-none"
+    />
+    <button
+      type="submit"
+      class="rounded-r-full bg-primary text-secondary h-[42px] w-[42px] p-2"
+    >
+      <svg class="mail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+    </button>
+  </div>
+</form>
+
+
+<p>The above input box is a short code and reuse it in all my markdown pages.</p>
+<h3 id="how-can-i-reuse-code-between-shortcode-and-partials">How can I reuse code between shortcode and partials?</h3>
+<p>As I mentioned you can not use a shortcode in partials, but you can do vice versa. So if you ever wanted to reuse code, create a partial and include it in shortcode.</p>
+
+      <div>
+        
+        <h2>Coming next</h2>
+        <p>
+          <a href="https://pixobe.com/blog/hugo/hugo-configuration/" class="text-blue-500">Hugo config management</a>
+          : Learn how to use site level and page level variables in templates.
+        </p>
+        
+      </div>
+    </section>
+    <aside>
+      <section>
+         
+        <h2>See Also</h2>
+        <ul>
+          
+          <li><a href="/blog/hugo/getting-started/">Getting Started</a></li>
+          
+          <li><a href="/blog/hugo/">Hugo</a></li>
+          
+          <li><a href="/blog/hugo/hugo-configuration/">Hugo config management</a></li>
+          
+        </ul>
+        
+      </section>
+    </aside>
+  </div>
+</div>
+
+
+<div class="box-border p-2 md:p-8 bg-secondary opacity-70 mt-8">
+  <form
+  name="subscribers"
+  method="POST"
+  action="/thankyou"
+  method="POST"
+  data-netlify="true"
+  class="flex justify-center"
+>
+  <div class="flex flex-row w-full lg:w-[450px]">
+    <input
+      type="text"
+      placeholder="Subscribe for updates"
+      name="subscriber"
+      class="p-2 box-border rounded-l-full h-[42px] w-full hover:outline-none focus:outline-none hover:border-accent border border-primary border-r-none"
+    />
+    <button
+      type="submit"
+      class="rounded-r-full bg-primary text-secondary h-[42px] w-[42px] p-2"
+    >
+      <svg class="mail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+    </button>
+  </div>
+</form>
+
+</div>
+
+
+</main>
+    <footer><div class="bg-primary text-white">
+  <footer class="footer p-10 w-[80%] mx-auto">
+    <div>
+      
+      <span class="footer-title">WordPress</span>
+      
+      <a class="link link-hover" href="/wordpress/coloring-online">Coloring Online</a>
+      
+      <a class="link link-hover" href="/wordpress/affiliate-link-manager">Affiliates Link Manager</a>
+       
+    </div>
+  </footer>
+  <div style="background-color: rgba(0, 0, 0, 0.1)" class="text-secondary">
+    <footer class="footer items-center p-10 w-[80%] mx-auto">
+      <div class="items-center grid-flow-col">
+        <div class="w-5 h-5 text-secondary">
+          <svg  viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.5697 0H38.4302C36.5358 0 35 1.5357 35 3.4302V9.5697C35 11.4642 36.5358 13 38.4302 13H44.5697C46.4642 13 48 11.4642 48 9.5697V3.4302C48 1.5357 46.4642 0 44.5697 0Z" fill="currentColor"/>
+<path d="M20.5268 13.3659H25.9181C28.149 13.4927 30.2712 14.3716 31.9384 15.8594L32.1406 16.0841C33.6361 17.7464 34.5162 19.8714 34.634 22.1044V27.4732C34.634 28.4085 35.0056 29.3056 35.667 29.967C36.3284 30.6284 37.2255 31 38.1609 31H44.4732C45.4085 31 46.3056 30.6284 46.967 29.967C47.6284 29.3056 48 28.4085 48 27.4732V21.1609C48 20.2255 47.6284 19.3285 46.967 18.6671C46.3056 18.0057 45.4085 17.6341 44.4732 17.6341H39.1043C36.8714 17.5162 34.7464 16.6361 33.084 15.1406L32.8594 14.9384C31.3686 13.2731 30.4892 11.1499 30.3659 8.9181V3.5268C30.3659 2.5915 29.9944 1.6944 29.333 1.033C28.6715 0.371601 27.7745 0 26.8391 0H20.5268C19.5914 0 18.6944 0.371601 18.033 1.033C17.3716 1.6944 17 2.5915 17 3.5268V9.8392C17 10.7745 17.3716 11.6715 18.033 12.3329C18.6944 12.9943 19.5914 13.3659 20.5268 13.3659Z" fill="currentColor"/>
+<path d="M9.56976 35H3.43024C1.53576 35 0 36.5358 0 38.4303V44.5698C0 46.4643 1.53576 48 3.43024 48H9.56976C11.4642 48 13 46.4643 13 44.5698V38.4303C13 36.5358 11.4642 35 9.56976 35Z" fill="currentColor"/>
+<path d="M9.57976 0.5H3.44023C1.54576 0.5 0.00999451 2.0358 0.00999451 3.9303V10.0698C0.00999451 11.9643 1.54576 13.5 3.44023 13.5H9.57976C11.4742 13.5 13.01 11.9643 13.01 10.0698V3.9303C13.01 2.0358 11.4742 0.5 9.57976 0.5Z" fill="currentColor"/>
+<path d="M43.5798 34.5H37.4402C35.5458 34.5 34.01 36.0358 34.01 37.9303V44.0698C34.01 45.9643 35.5458 47.5 37.4402 47.5H43.5798C45.4742 47.5 47.01 45.9643 47.01 44.0698V37.9303C47.01 36.0358 45.4742 34.5 43.5798 34.5Z" fill="currentColor"/>
+<path d="M30.5385 24.0385C30.5385 27.6283 27.6283 30.5385 24.0385 30.5385C20.4486 30.5385 17.5385 27.6283 17.5385 24.0385C17.5385 20.4486 20.4486 17.5385 24.0385 17.5385C27.6283 17.5385 30.5385 20.4486 30.5385 24.0385Z" fill="currentColor"/>
+<path d="M27.4732 34.634H22.1043C19.8714 34.5161 17.7464 33.6361 16.084 32.1406L15.8594 31.9384C14.3591 30.2613 13.4791 28.1206 13.3659 25.8732V20.4819C13.3548 19.5735 12.9936 18.7044 12.3575 18.0557C11.7214 17.4071 10.8595 17.0289 9.9514 17H3.5268C2.5914 17 1.6944 17.3716 1.033 18.033C0.371597 18.6944 0 19.5914 0 20.5268V26.8391C0 27.7745 0.371597 28.6715 1.033 29.333C1.6944 29.9944 2.5914 30.3659 3.5268 30.3659H8.9181C11.149 30.4927 13.2712 31.3716 14.9384 32.8594L15.1406 33.084C16.6361 34.7464 17.5162 36.8714 17.634 39.1043V44.4731C17.634 44.9382 17.726 45.3986 17.9046 45.8279C18.0833 46.2573 18.3451 46.6471 18.675 46.9749C19.0048 47.3027 19.3963 47.562 19.8268 47.7379C20.2573 47.9138 20.7183 48.0029 21.1833 47.9999H27.4732C28.4085 47.9999 29.3056 47.6284 29.967 46.967C30.6284 46.3056 31 45.4085 31 44.4731V38.1608C31 37.2255 30.6284 36.3284 29.967 35.667C29.3056 35.0056 28.4085 34.634 27.4732 34.634Z" fill="currentColor"/>
+</svg>
+
+        </div>
+        <p>Copyright © 2022 - All right reserved</p>
+      </div>
+      <div
+        class="grid-flow-col gap-4 md:place-self-center md:justify-self-end fill-white"
+      >
+        
+        <a href="https://facebook.com/pixobe" target="_blank" alt="Facebook">
+          <div class="w-6 h-6"><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            ></path></svg
+        ></div>
+        </a>
+        
+        <a href="https://github.com/pixobe" target="_blank" alt="Github">
+          <div class="w-6 h-6"> <svg
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+            clip-rule="evenodd"
+          />
+        </svg></div>
+        </a>
+        
+      </div>
+    </footer>
+  </div>
+</div>
+<script src="/js/main.js" defer></script>
+
+
+
+
+
+
+
+</footer>
+  </body>
+</html>

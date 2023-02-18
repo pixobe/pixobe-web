@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WordPress Plugins &amp; Themes on Pixobe</title>
+    <link>https://pixobe.com/wordpress/</link>
+    <description>Recent content in WordPress Plugins &amp; Themes on Pixobe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://pixobe.com/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WordPress plugin to turn any image on your website into a coloring page</title>
+      <link>https://pixobe.com/wordpress/coloring-online/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pixobe.com/wordpress/coloring-online/</guid>
+      <description>The Coloring Book Turn your blog into a coloring page with this plugin.</description>
+    </item>
+    
+    <item>
+      <title>Get the most customizable WordPress Affiliate Link Manager plugin today</title>
+      <link>https://pixobe.com/wordpress/affiliate-link-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pixobe.com/wordpress/affiliate-link-manager/</guid>
+      <description>Check out Product displays File Folder style A simple file folder style card with an Header, quick catpion, benefit list and eye grabbing pricing section.</description>
+    </item>
+    
+  </channel>
+</rss>

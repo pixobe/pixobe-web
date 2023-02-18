@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Pixobe</title>
+    <link>https://pixobe.com/blog/hugo/</link>
+    <description>Recent content in Hugo on Pixobe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Sep 2022 07:04:37 +0800</lastBuildDate><atom:link href="https://pixobe.com/blog/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>https://pixobe.com/blog/hugo/getting-started/</link>
+      <pubDate>Fri, 16 Sep 2022 07:04:37 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/getting-started/</guid>
+      <description>Prerequisites Please check quick start to install Hugo.
+Create a site For this tutorial lets create a simple site using Hugo</description>
+    </item>
+    
+    <item>
+      <title>Step 1: Home Page</title>
+      <link>https://pixobe.com/blog/hugo/home-page/</link>
+      <pubDate>Sat, 24 Sep 2022 15:37:34 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/home-page/</guid>
+      <description>Home Page Lets create a home page, create index.html under hugo-tutorial/layouts/index.</description>
+    </item>
+    
+    <item>
+      <title>Page Layout - Single &amp; List</title>
+      <link>https://pixobe.com/blog/hugo/hugo-page-layout-single-and-list/</link>
+      <pubDate>Sat, 24 Sep 2022 21:03:16 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/hugo-page-layout-single-and-list/</guid>
+      <description>Page Layout Templates Create folder _default inside content/layouts . Ideally all these themeing goes under themes, but as I mentioned earlier we are not going to touch themes, for learning purpose.</description>
+    </item>
+    
+    <item>
+      <title>Step 3: Header and Footer</title>
+      <link>https://pixobe.com/blog/hugo/header-and-footer/</link>
+      <pubDate>Sat, 24 Sep 2022 20:55:45 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/header-and-footer/</guid>
+      <description>Every site needs a header and footer, well at least for this tutorial purpose, lets assume.</description>
+    </item>
+    
+    <item>
+      <title>Styles and Scripts</title>
+      <link>https://pixobe.com/blog/hugo/styles-and-scripts/</link>
+      <pubDate>Sun, 25 Sep 2022 14:10:28 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/styles-and-scripts/</guid>
+      <description>Styles and Scripts What is a website without some css or even some javascript, even though you just hate it?</description>
+    </item>
+    
+    <item>
+      <title>Shortcode vs Partials</title>
+      <link>https://pixobe.com/blog/hugo/shortcode-vs-partials/</link>
+      <pubDate>Fri, 16 Sep 2022 07:04:37 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/shortcode-vs-partials/</guid>
+      <description>Shortcode and Partials Both are reusable html code that can be used in your hugo site.</description>
+    </item>
+    
+    <item>
+      <title>Hugo config management</title>
+      <link>https://pixobe.com/blog/hugo/hugo-configuration/</link>
+      <pubDate>Fri, 16 Sep 2022 07:04:37 +0800</pubDate>
+      
+      <guid>https://pixobe.com/blog/hugo/hugo-configuration/</guid>
+      <description>Configuration When you create a new Hugo site, you might have noticed config.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.08" clip-path="url(#clip0_113_188)">
+<circle cx="256" cy="4" r="58" stroke="#E4E4E7" stroke-width="4"/>
+<circle cx="239" cy="4" r="38" stroke="#E4E4E7" stroke-width="4"/>
+<path d="M275 -5.5C275 14.0095 258.31 30 237.5 30C216.69 30 200 14.0095 200 -5.5C200 -25.0095 216.69 -41 237.5 -41C258.31 -41 275 -25.0095 275 -5.5Z" stroke="#E4E4E7" stroke-width="4"/>
+<ellipse cx="24" cy="205.5" rx="9" ry="9.5" fill="#D9D9D9"/>
+<ellipse cx="47" cy="231.5" rx="9" ry="9.5" fill="#D9D9D9"/>
+<circle cx="24" cy="232" r="9" fill="#D9D9D9"/>
+<path d="M20 4L26.0619 19.5471H45.6785L29.8083 29.1558L35.8702 44.7029L20 35.0942L4.1298 44.7029L10.1917 29.1558L-5.67853 19.5471H13.9381L20 4Z" fill="#D9D9D9"/>
+<path d="M196 218L202.062 233.547H221.679L205.808 243.156L211.87 258.703L196 249.094L180.13 258.703L186.192 243.156L170.321 233.547H189.938L196 218Z" fill="#D9D9D9"/>
+</g>
+<defs>
+<clipPath id="clip0_113_188">
+<rect width="250" height="250" fill="white"/>
+</clipPath>
+</defs>
+</svg>
